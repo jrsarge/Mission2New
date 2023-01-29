@@ -25,7 +25,12 @@ namespace Mission2
             for (int i = 0; i < diceRolls; i++)
             {
                 Random rnd = new Random();
-                int rollValue = rnd.Next(2, 13);
+                //Die Number One
+                int rollValue1 = rnd.Next(1, 7);
+                //Die Number Two
+                int rollValue2 = rnd.Next(1, 7);
+
+                int rollValue = rollValue1 + rollValue2
 
                 allRolls[i] = rollValue;
             }
